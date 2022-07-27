@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\BGMusicScript.cs" />
      <Compile Include="Assets\Scripts\Finances.cs" />
      <Compile Include="Assets\Scripts\GameOver.cs" />
+     <Compile Include="Assets\Scripts\InGmeMenu.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\NeedleController.cs" />
      <Compile Include="Assets\Scripts\PointCreator.cs" />

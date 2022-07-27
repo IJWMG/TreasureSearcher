@@ -44,9 +44,7 @@ public class TreasureController : MonoBehaviour
         }
     }
     public void SellTreasure(){
-        int price = treasure.trPrice;
-        //Debug.Log(price);
-        finances.AddMoney(price);
+        finances.AddMoney(treasure.trPrice);
     }
     public void DeleateTreasure(){
         Destroy(currentTreasure);

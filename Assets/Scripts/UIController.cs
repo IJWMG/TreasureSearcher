@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private Finances finances;
-    [SerializeField] private GameObject coverSprite, shopPanel, gameOverPanel;
+    [SerializeField] private GameObject coverSprite, shopPanel, gameOverPanel, menuPanel;
     [SerializeField] private PointCreator pointCreator;
     [SerializeField] private TreasureController treasureController;
     [SerializeField] private GameOver gameOver;
@@ -48,6 +48,7 @@ public class UIController : MonoBehaviour
     }
     public void OpenUpShopWindow(){
         shopPanel.SetActive(true);
+        menuPanel.SetActive(false);
     }
     public void SkipButtonOn(){
         //Debug.Log("u trying to skip it, shovei is " + isShovelDown);
@@ -97,6 +98,8 @@ public class UIController : MonoBehaviour
     }
     public void ExitShop(){
         shopPanel.SetActive(false);
+        menuPanel.GetComponent<InGmeMenu>().CloseMenu();
+       
     }
     public void GameOverPannelOn(){
         gameOverPanel.SetActive(true);

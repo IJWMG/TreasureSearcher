@@ -15,7 +15,7 @@ public class ShopController : MonoBehaviour
     }
     private void Update() {
         if (buyingCount<9) {
-            oneShovel.text = (100 + (buyingCount * 100) +"$");
+            oneShovel.text = (100 + (buyingCount * 100) +"$ ");
         }
         else {
             oneShovel.text = ("1000$");
@@ -24,7 +24,7 @@ public class ShopController : MonoBehaviour
             xImagine.SetActive(true);
          }
         else{
-            threeShovels.text = (300 + (buyingCount * 100) +"$");
+            threeShovels.text = (300 + (buyingCount * 100) +"$ ");
          }
     }
 
